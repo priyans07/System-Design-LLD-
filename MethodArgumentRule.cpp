@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class Parent{
+    public:
+    virtual void Print(string msg){
+        cout<<"Parent :"<<msg<<endl;
+    }
+};
+class Child : public Parent{
+    public : 
+    void Print(string msg)override{
+        cout<<"Child :"<<msg<<endl;
+    }
+};
+class Client{
+    private:
+    Parent *p;
+    public:
+    Client(Parent *p){
+        this->p=p;
+    }
+    void PrintMsg(){
+    p->Print("hello beta ji");
+    }
+};
+int main(){
+Parent * parent=new Parent();
+Parent * child=new Child();
+Client * c=new Client(parent);
+c->PrintMsg();
+
+}

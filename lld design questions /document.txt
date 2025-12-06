@@ -1,0 +1,4 @@
+Hello, this is a sample document.
+[Image: image1.png]
+This is another text element.
+[Image: photo.jpg]
