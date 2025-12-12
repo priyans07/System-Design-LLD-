@@ -4,7 +4,7 @@
 #include<iostream>
 using namespace std;
 
-class Burger{
+class Burger{ 
     public:
     virtual void prepareBurger()=0; //pure virtual function
     virtual ~Burger() {} //virtual destructor
@@ -25,7 +25,7 @@ class BurgerFactory{
     public:
     Burger* createBurger(string type){
         if(type=="basic"){
-            return new BasicBurger();
+            return new BasicBurger(); 
         }
         else if(type=="premium"){
             return new PremiumBurger();
