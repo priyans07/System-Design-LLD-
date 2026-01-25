@@ -61,15 +61,15 @@ public:
         return user;
     }
 
-    void setRestaurant(Restaurant* r) {
+    void setRestaurant(Restraunt* r) {
         restaurant = r;
     }
 
-    Restaurant* getRestaurant() const {
+    Restraunt* getRestaurant() const {
         return restaurant;
     }
 
-    void setItems(const vector<MenuItem>& its) {
+    void setItems(const vector<MenuItems>& its) {
         items = its;
         total = 0;
         for (auto &i : items) {
@@ -77,7 +77,7 @@ public:
         }
     }
 
-    const vector<MenuItem>& getItems() const {
+    const vector<MenuItems>& getItems() const {
         return items;
     }
 
